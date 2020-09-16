@@ -146,6 +146,17 @@ span.psw {
   }
 }
 </style>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 <body>
     <!--::header part start::-->
@@ -189,7 +200,7 @@ span.psw {
                                     <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                                 <li class="d-none d-lg-block">
-                                    <a class="btn_1" href="#">Sign in</a>
+                                    <a class="btn_1" onclick="document.getElementById('id01')" href="#">Sign in</a>
                                 </li>
                             </ul>
                         </div>
